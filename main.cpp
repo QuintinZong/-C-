@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<windows.h>
 using namespace std;
 int main(){
 	double a,b,c,delta=0,x1=0,x2=0;
@@ -7,7 +8,7 @@ int main(){
 	cout<<"Thinking......\n";
 	delta=b*b-4*a*c;
 	if(delta<0){
-		cout<<"原方程无解"; 
+		cout<<"原方程无解; 
 		return 0;
 	}
 	else if(delta==0){
@@ -21,5 +22,6 @@ int main(){
 		printf("x1=%.2f x2=%.2f",x1,x2);
 		return 0;
 	}
+	sleep 1000;
 	return 0;
 }
