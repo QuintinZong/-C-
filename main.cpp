@@ -1,26 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	double a,b,c,delta=0,x1=0,x2=0;
-	cout<<"è¯·è¾“å…¥ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹çš„å„é¡¹ç³»æ•°:\n"; 
-	cin>>a>>b>>c;
-	cout<<"Thinking......\n";
-	delta=b*b-4*a*c;
-	if(delta<0){
-		cout<<"åŽŸæ–¹ç¨‹æ— è§£"<<endl; 
-		system("pause");
-	}
-	else if(delta==0){
-		x1=x2=-b/2*a;
-		printf("x1=x2=%.2f",x1);
-		cout<<endl;
-		system("pause");
-	}
-	else if(delta>0){
-		x1=(-b+sqrt(delta))/2*a;
-		x2=(-b-sqrt(delta))/2*a;
-		printf("x1=%.2f x2=%.2f",x1,x2);
-		cout<<endl;
-		system("pause");
+	while(true){
+		double a,b,c,delta=0,x1=0,x2=0;
+		cout<<"ÇëÊäÈëÒ»Ôª¶þ´Î·½³ÌµÄ¸÷ÏîÏµÊý:\n"; 
+		cout<<"a=";cin>>a;
+		cout<<"b=";cin>>b;
+		cout<<"c=";cin>>c;
+		cout<<"Thinking For the solution of "<<a<<"x^2+"<<b<<"x+"<<c<<"=0......\n";
+		delta=b*b-4*a*c;
+		if(delta<0){
+			cout<<"Ô­·½³ÌÎÞ½â"<<endl; 
+			system("pause");
+		}
+		else if(delta==0){
+			x1=x2=-b/2*a;
+			printf("x1=x2=%.2f",x1);
+			cout<<endl;
+			system("pause");
+		}
+		else if(delta>0){
+			x1=(-b+sqrt(delta))/2*a;
+			x2=(-b-sqrt(delta))/2*a;
+			printf("x1=%.2f x2=%.2f",x1,x2);
+			cout<<endl;
+			system("pause");
+		}
 	}
 }
